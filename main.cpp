@@ -24,7 +24,7 @@ void printArray(const float* a, const unsigned int n) {
 
 int main(int argc, char* argv [])
 {
-    qDebug() << "main start";
+    qDebug() << "app started";
     QCoreApplication(argc, argv);
 
     int deviceCount = 0;

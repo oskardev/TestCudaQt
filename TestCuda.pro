@@ -39,14 +39,8 @@ QMAKE_LFLAGS_DEBUG   = /NODEFAULTLIB:msvcrtd.lib
 # The following makes sure all path names (which often include spaces) are put between quotation marks
 CUDA_INC = $$join(INCLUDEPATH,'" -I"','-I"','"')
 
-#QMAKE_CXXFLAGS_DEBUG += /MDd
-#QMAKE_CXXFLAGS_RELEASE += /MD
-
-
-
 # Configuration of the Cuda compiler
 CONFIG(debug, debug|release) {
-    #QQMAKE_CXXFLAGS_DEBUG += /MTd
     QMAKE_CXXFLAGS = /MTd
     # Debug mode
     cuda_d.input = CUDA_SOURCES
